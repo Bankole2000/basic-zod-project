@@ -1,6 +1,6 @@
 # Lugah Schedule Demo Service
 
-REST API for collection contact information and scheduling demo presentations
+REST API for collection of contact information and demo presentation requests
 
 Built with: 
 1. Node JS
@@ -32,8 +32,8 @@ type ScheduledDemo = {
   template?: string,
   moreInfo?: string,
   contact: Contact[],
-  createdAt?: string,
-  updatedAt?: string
+  createdAt?: DateTime,
+  updatedAt?: DateTime
 }
 ```
 
