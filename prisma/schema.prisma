@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ScheduledDemo {
+  id            Int      @id @default(autoincrement())
+  requestedDate DateTime
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  template      String?  @db.VarChar(255) @default("General Purpose Chatbot")
+  moreInfo      String?
+  contact       Contact  @relation(fields: [contactId], references: [id])
+  contactId     Int
+}
+
+model Contact {
+  id             Int             @id @default(autoincrement())
+  email          String          @unique
+  firstname      String
+  lastname       String
+  phone          String?
+  company        String?
+  industry       String?
+  location       String
+  scheduledDemos ScheduledDemo[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
