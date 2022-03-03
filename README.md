@@ -50,8 +50,8 @@ Is currently running at - [https://lugahfront.herokuapp.com/](https://lugahfront
 | PATCH  | "/contacts/:contactId"     | {params: id} todo fields to update | Returns updated contact                   |
 | DELETE | "/contacts/:contactId"     | {params: id}                       | Returns deleted contact of id :id                |
 | GET    | "/schedule-demo"         | null                               | Returns all Scheduled Demos in database               |
-| POST   | "/schedule-demo"         | todoItem: Todo                     | Returns created demo Schedule Request item                   |
+| POST   | "/schedule-demo"         | scheduled Demo Item: ScheduledDemo                     | Returns created demo Schedule Request item                   |
 | GET    | "/schedule-demo/:scheduleId"     | {params: id}                       | Returns single Schedule Request item of id :scheduleId          |
-| PATCH  | "/schedule-demo/:scheduleId"     | {params: id} todo fields to update | Returns updated Schedule Request item                   |
+| PATCH  | "/schedule-demo/:scheduleId"     | {params: id} ScheduledDemo fields to update | Returns updated Schedule Request item                   |
 | DELETE | "/schedule-demo/:scheduleId"     | {params: id}                       | Returns deleted Schedule Request item of id :scheduleId                |
 
