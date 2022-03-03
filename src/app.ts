@@ -12,5 +12,3 @@ app.listen(port, async () => {
   log.info(`🚀 App is running at http://localhost:${port}`);
   routes(app);
 })
-
-// (081 091-83784
