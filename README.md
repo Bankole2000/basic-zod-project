@@ -1,6 +1,6 @@
 # Lugah Schedule Demo Service
 
-REST API for collection contact information and scheduling demo presentations [@Spoke.ai](https://spoke.ai)
+REST API for collection contact information and scheduling demo presentations
 
 Built with: 
 1. Node JS
