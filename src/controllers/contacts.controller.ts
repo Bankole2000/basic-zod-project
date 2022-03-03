@@ -37,6 +37,23 @@ export const getContactsHandler = async (req:Request, res:Response) => {
   })
 }
 
+export const getcontactDetailsHandler =async (req:Request, res: Response) => {
+  const { contactId: id } = req.params;
+  const contact = await findContactById(Number(id));
+  if(!contact){
+    return res.status(404).send({
+      message: "No contact with that ID",
+      success: false, 
+      data: null
+    })
+  }
+  return res.status(200).send({
+    message: "Contact Details retrieved",
+    success: true, 
+    data: contact
+  })
+}
+
 export const updateContactHandler = async (req:Request, res:Response) => {
   const { contactId: id } = req.params;
   const contactToUpdate = await findContactById(Number(id));

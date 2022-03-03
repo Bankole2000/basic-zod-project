@@ -10,4 +10,6 @@ const createScheduleSchema = object({
   })
 })
 
-export { createScheduleSchema }
+const scheduleDemoFields = ['requestedDate', 'template', 'moreInfo'];
+
+export { createScheduleSchema, scheduleDemoFields }

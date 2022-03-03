@@ -13,7 +13,7 @@ const validate = (schema: AnyZodObject, schemaName: string) => (req: Request, re
     next()
   } catch (error: any) {
     console.log({error})
-    return res.status(400).send({message: "Invalid Date",  succes: false, error: error.errors})
+    return res.status(400).send({message: "Invalid Data",  succes: false, error: error.errors})
   }
 }
 
