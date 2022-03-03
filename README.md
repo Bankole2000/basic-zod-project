@@ -44,14 +44,14 @@ Is currently running at - [https://lugahfront.herokuapp.com/](https://lugahfront
 | Method | Path             | Data                               | Response                                    |
 | ------ | ---------------- | ---------------------------------- | ------------------------------------------- |
 | GET    | "/"              | null                               | Returns JSON object with some api meta data |
-| GET    | "/contacts"         | null                               | Returns all Todos in database               |
-| POST   | "/contacts"         | todoItem: Todo                     | Returns created todo item                   |
-| GET    | "/contacts/:contactId"     | {params: id}                       | Returns single todo item of id :id          |
-| PATCH  | "/contacts/:contactId"     | {params: id} todo fields to update | Returns updated todo item                   |
-| DELETE | "/contacts/:contactId"     | {params: id}                       | Returns deleted todo item id                |
-| GET    | "/schedule-demo"         | null                               | Returns all Todos in database               |
-| POST   | "/schedule-demo"         | todoItem: Todo                     | Returns created todo item                   |
-| GET    | "/schedule-demo/:scheduleId"     | {params: id}                       | Returns single todo item of id :id          |
-| PATCH  | "/schedule-demo/:scheduleId"     | {params: id} todo fields to update | Returns updated todo item                   |
-| DELETE | "/schedule-demo/:scheduleId"     | {params: id}                       | Returns deleted todo item id                |
+| GET    | "/contacts"         | null                               | Returns all Contacts in database               |
+| POST   | "/contacts"         | contact: Contact                     | Returns created Contact item                   |
+| GET    | "/contacts/:contactId"     | {params: id}                       | Returns single contact of id :id          |
+| PATCH  | "/contacts/:contactId"     | {params: id} todo fields to update | Returns updated contact                   |
+| DELETE | "/contacts/:contactId"     | {params: id}                       | Returns deleted contact of id :id                |
+| GET    | "/schedule-demo"         | null                               | Returns all Scheduled Demos in database               |
+| POST   | "/schedule-demo"         | todoItem: Todo                     | Returns created demo Schedule Request item                   |
+| GET    | "/schedule-demo/:scheduleId"     | {params: id}                       | Returns single Schedule Request item of id :scheduleId          |
+| PATCH  | "/schedule-demo/:scheduleId"     | {params: id} todo fields to update | Returns updated Schedule Request item                   |
+| DELETE | "/schedule-demo/:scheduleId"     | {params: id}                       | Returns deleted Schedule Request item of id :scheduleId                |
 
